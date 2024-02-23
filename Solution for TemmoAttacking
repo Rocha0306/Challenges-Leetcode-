@@ -1,0 +1,41 @@
+int findPoisonedDuration(int* timeSeries, int timeSeriesSize, int duration) {
+    duration = 2;
+    timeSeriesSize = 2;
+    int TempoTotalEven;
+    int TempoEvenSegundoAtaque;
+    int TempoTotalEvenPrimeiroAtaque;
+    int TempoTotalEvenSegundoAtaque;
+
+    for(int i = 0; i < timeSeriesSize; i++) {
+        printf("\nDigite o tempo do primeiro e segundo ataque: ");
+        scanf("%d", &timeSeries[i]);
+
+   
+
+    if(timeSeries[1] == timeSeries[0] + 1) {
+        TempoEvenSegundoAtaque = timeSeries[1] + duration - 1; //3
+        TempoTotalEvenPrimeiroAtaque = timeSeries[0] + 1; //2
+        TempoTotalEvenSegundoAtaque = TempoEvenSegundoAtaque - timeSeries[1];
+        int NewDuration = 0;
+        TempoTotalEven =  TempoTotalEvenPrimeiroAtaque +  TempoTotalEvenSegundoAtaque + NewDuration; // 2 + 1 + 0;
+
+    }
+
+
+
+    else {
+        TempoEvenSegundoAtaque = timeSeries[1] + duration - 1;
+        TempoTotalEvenPrimeiroAtaque = timeSeries[0];
+        TempoTotalEvenSegundoAtaque = TempoEvenSegundoAtaque - timeSeries[1];
+        TempoTotalEven =  TempoTotalEvenPrimeiroAtaque +  TempoTotalEvenSegundoAtaque + duration;
+    }
+
+
+
+
+  
+    }
+
+ return TempoTotalEven;
+
+}
