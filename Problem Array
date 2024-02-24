@@ -1,0 +1,26 @@
+Dado um array de inteiros arr, retorne a média dos inteiros restantes após remover o menor 5%e o maior 5%dos elementos.
+
+Respostas dentro da resposta real serão consideradas aceitas.10-5
+
+ 
+
+Exemplo 1:
+
+Entrada: arr = [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3]
+ Saída: 2,00000
+ Explicação: Depois de apagar os valores mínimo e máximo desta matriz, todos os elementos são iguais a 2, então a média é 2.
+Exemplo 2:
+
+Entrada: arr = [6,2,7,5,1,2,0,3,10,2,5,0,5,5,0,8,7,6,8,0]
+ Saída: 4,00000
+Exemplo 3:
+
+Entrada: arr = [6,0,7,0,7,5,7,8,3,4,0,7,8,1,6,8,1,1,2,4,8,1,9 ,5,4,3,8,5,10,8,6,6,1,0,6,10,8,2,3,4]
+ Saída: 4,77778
+ 
+
+Restrições:
+
+20 <= arr.length <= 1000
+arr.length é um múltiplo de 20.
+0 <= arr[i] <= 105
